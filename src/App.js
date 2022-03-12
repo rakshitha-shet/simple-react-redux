@@ -1,7 +1,9 @@
+import CountComponent from "./Component/CountComponent";
+
 function App() {
   return (
     <div>
-      APP
+      <CountComponent/>
     </div>
   );
 }
