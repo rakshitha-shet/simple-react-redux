@@ -1,10 +1,12 @@
+import {Provider} from "react-redux"
 import CountComponent from "./Component/CountComponent";
+import {store} from "./redux/store"
 
 function App() {
   return (
-    <div>
+    <Provider store={store}>
       <CountComponent/>
-    </div>
+    </Provider>
   );
 }
 
