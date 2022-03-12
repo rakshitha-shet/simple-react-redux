@@ -1,4 +1,4 @@
-import { INC_COUNT, DEC_COUNT } from "./countType"
+import { INC_COUNT, DEC_COUNT, RESET_COUNT } from "./countType"
 
 export const incCount = () => {
     return {
@@ -9,5 +9,11 @@ export const incCount = () => {
 export const decCount = () => {
     return {
         type: DEC_COUNT
+    }
+}
+
+export const resetCount = () => {
+    return {
+        type: RESET_COUNT
     }
 }

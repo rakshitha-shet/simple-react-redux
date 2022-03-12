@@ -1,4 +1,4 @@
-import { INC_COUNT, DEC_COUNT } from "./countType"
+import { INC_COUNT, DEC_COUNT, RESET_COUNT } from "./countType"
 
 const initialState = { count: 0}
 
@@ -12,6 +12,7 @@ export const countReducer = (state = initialState, action) => {
             ...state,
             count: state.count - 1
         }
+        case RESET_COUNT: return initialState
         default: return state;
     }
 }
