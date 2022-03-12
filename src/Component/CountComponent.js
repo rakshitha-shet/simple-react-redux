@@ -1,6 +1,6 @@
 import React from 'react'
 import {useSelector,useDispatch} from "react-redux"
-import {incCount} from "../redux/count/countAction"
+import {incCount, decCount} from "../redux/count/countAction"
 
 export default function CountComponent() {
     const count = useSelector(state => state.count);
@@ -9,6 +9,7 @@ export default function CountComponent() {
     <>
         <h1>Count - {count}</h1>
         <button onClick={() => dispatch(incCount())}>Add Count</button>
+        <button onClick={() => dispatch(decCount())}>Sub Count</button>
     </>
   )
 }
